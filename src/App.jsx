@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="min-h-screen bg-blue-950 text-white overflow-hidden">
       <Navbar />
-      {/* <Hero />
-      <Features />
+       <Hero />
+      {/* <Features />
       <Pricing />
-      <Footer /> */}
+      <Footer />  */}
     </div>
   );
 }
