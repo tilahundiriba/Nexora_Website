@@ -1,4 +1,14 @@
-import { Play } from "lucide-react";
+import {
+  Bell,
+  Calendar,
+  Home,
+  Play,
+  Projector,
+  ReceiptPoundSterling,
+  Settings,
+  TerminalSquare,
+  User,
+} from "lucide-react";
 import React from "react";
 
 const Hero = () => {
@@ -32,10 +42,92 @@ const Hero = () => {
               </button>
               <button className="group w-full sm:w-auto px-6 m-2 sm:px-8 py-2 mt-4 sm:py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg font-semibold text-sm sm:text-base hover:bg-white/10 flex items-center justify-center space-x-2">
                 <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white"/>
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
                 </div>
                 <span>Watch Demo</span>
               </button>
+            </div>
+          </div>
+
+          <div className="relative order-2 w-full">
+            <div className="relative bg-white/5 backdrop-xl rounded-xl sm:rounded-2xl p-1 sm:p-2 shadow-2xl border border/10 flex gap-2">
+              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[200px] lg:h-[460px]">
+                <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
+                  <div className="flex items-center space-x-1 group cursor-pointer">
+                    <div className="">
+                      <img
+                        src="/images/NexoraBG.png"
+                        alt="logoForNoxera"
+                        className="w-6 h-6 sm:w-8 sm:h-6"
+                      />
+                    </div>
+                    <span className="text-lg sm:textxl md:text-2xl font-medium">
+                      <span className="text-white"> Nexora</span>
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 p-2 text-white/60">
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <Home className="w-4 h-4" />
+                    <p>Dashboard</p>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <Projector className="w-4 h-4" />
+                    <p>Projects</p>
+                  </div>
+                  <div className="flexitems-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <p>Tasks</p>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <TerminalSquare className="w-4 h-4" />
+                    <p>Teams</p>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <ReceiptPoundSterling className="w-4 h-4" />
+                    <p>Reports</p>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <Calendar className="w-4 h-4" />
+                    <p>Calander</p>
+                  </div>
+                  <div className="flex items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <Settings className="w-4 h-4" />
+                    <p>Setting</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] w-full lg:h-[450px]">
+                <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
+                  <span className="text-lg sm:textxl md:text-2xl font-medium">
+                    Dashboard
+                  </span>
+                  <div className="flex gap-2 items-center text-white/60">
+                    <Bell className="w-4 h-4" />
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center bg-white/20">
+                      <User />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between gap-2 p-2 text-white/60">
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                     <p>Total Projects</p>
+                   <h1>24</h1>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                    <p> Tasks Completed</p>
+                   <h1>24</h1>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                     <p>Team Members</p>
+                   <h1>24</h1>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg backdrop-blur-lg hover:bg-blue-200/10 border border-white/10">
+                     <p>Productivity</p>
+                   <h1>24</h1>
+                  </div>
+                 
+                </div>
+              </div>
             </div>
           </div>
         </div>
